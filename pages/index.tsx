@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/Header';
+import Feed from '../components/Feed'
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      <h1>This is instragram clone.</h1>
-
-      
+      <Feed />
     </div>
   )
 }

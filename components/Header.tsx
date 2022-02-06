@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
 import { AiOutlineSearch } from "@react-icons/all-files/ai/AiOutlineSearch";
 
 function Header() {
     return (
-        <div>
+        <div className="shadow-sm border-b bg-white sticky top-0 z-50">
             <div className="flex justify-between max-w-6xl px-5 mx-auto">
                 {/* instagram logo */}
                 <div className="relative inline-grid w-24 cursor-pointer">
@@ -50,7 +49,7 @@ function Header() {
                     </svg>
 
                     {/* Heart icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" className="navBtn hover:fill-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="navBtn fill-white hover:fill-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
 
