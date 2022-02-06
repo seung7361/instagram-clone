@@ -1,24 +1,18 @@
 import Image from "next/image";
 import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
 import { AiOutlineSearch } from "@react-icons/all-files/ai/AiOutlineSearch";
-import { AiOutlineHome } from "@react-icons/all-files/ai/AiOutlineHome";
-import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu";
-import { HiOutlinePaperAirplane } from "@react-icons/all-files/hi/HiOutlinePaperAirplane"
 
 function Header() {
     return (
         <div>
-            <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
+            <div className="flex justify-between max-w-6xl px-5 mx-auto">
                 {/* instagram logo */}
-                <div className="relative hidden lg:inline-grid w-24 cursor-pointer">
+                <div className="relative inline-grid w-24 cursor-pointer">
                     <Image src={"/instagram logo.png"} layout='fill' objectFit="contain"/>
-                </div>
-                <div className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
-                    <FiInstagram />
                 </div>
 
                 {/* Middle */}
-                <div className="relative mt-1 p-3 rounded-md">
+                <div className="relative w-0 opacity-0 sm:opacity-100 sm:w-auto inline-flex mt-1 p-3 rounded-md">
                     <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
                         <AiOutlineSearch className="text-gray-300" />
                     </div>
@@ -28,10 +22,22 @@ function Header() {
                 </div>
 
                 {/* Right */}
-                <div className="flex items-center justify-end space-x-4">
-                    <AiOutlineHome className="h-10 w-10 cursor-pointer" />
-                    <AiOutlineMenu className="h-6 md:hidden cursor-pointer" />
-                </div>                
+                <div className="flex items-center space-x-4">
+                    {/* Home */}
+                    <svg xmlns="http://www.w3.org/2000/svg" className="navBtn" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+
+                    {/* paper airplane icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" className="navBtn" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    </svg>
+
+                    {/* Plus */}
+                    <svg xmlns="http://www.w3.org/2000/svg" className="navBtn" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
             </div>
         </div>
     );
