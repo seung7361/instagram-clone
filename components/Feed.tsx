@@ -1,4 +1,4 @@
-import Stories from "./Stories"
+import Stories from "./Stories.jsx"
 
 function Feed() {
     return (
