@@ -1,7 +1,12 @@
 import Image from "next/image";
 import { AiOutlineSearch } from "@react-icons/all-files/ai/AiOutlineSearch";
+import { useSession } from "next-auth/react";
 
 function Header() {
+
+    const { data: session } = useSession();
+    console.log(session);
+
     return (
         <div className="shadow-sm border-b bg-white sticky top-0 z-50">
             <div className="flex justify-between max-w-6xl px-5 mx-auto">
@@ -54,7 +59,7 @@ function Header() {
                     </svg>
 
                     {/* User Image */}
-                    <img src="/avatar.png" alt="profile pic" className="hover:scale-125 transition-all duration-150 h-10 rounded-full cursor-pointer" />
+                    <img src={session?.user?.image} alt="profile pic" className="hover:scale-125 transition-all duration-150 h-10 rounded-full cursor-pointer" />
                 </div>
             </div>
         </div>

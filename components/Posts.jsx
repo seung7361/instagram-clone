@@ -12,7 +12,7 @@ const posts = [
         id: '123',
         username: 'seung7361',
         userimg: '/avatar.png',
-        img: '/example image.jpeg',
+        img: '/example image2.jpeg',
         caption: 'This is dope!'
     },
 ];
