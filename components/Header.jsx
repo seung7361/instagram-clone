@@ -39,7 +39,7 @@ function Header() {
                             <PaperAirplaneIcon className="relative navBtn" />
                             <PlusIcon className="navBtn" />
                             <FireIcon className="navBtn" />
-                            <HeartIcon className="navBtn fill-white hover:fill-red-500" />
+                            <HeartIcon className="navBtn fill-black hover:fill-red-500" />
                             <img src={session?.user?.image}
                             alt="profile pic"
                             className="hover:scale-125 transition-all duration-150

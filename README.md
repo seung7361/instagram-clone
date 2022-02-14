@@ -21,7 +21,6 @@
 </div><br><br>
 
 ## About this project & goals
----
 ### Introduction
 This is a project where I follow along some tutorials by watching some videos on Youtube, reading some books and test some stuffs to create a fullstack application.
 <br><br>
@@ -30,6 +29,7 @@ This is a project where I follow along some tutorials by watching some videos on
 
 * [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
+* [Recoil](https://recoiljs.org/ko/)
 * [Tailwindcss](https://tailwindcss.com/)
 * [Firebase](https://firebase.google.com/)
 * [Typescript](https://www.typescriptlang.org/)
@@ -42,6 +42,7 @@ This is a project where I follow along some tutorials by watching some videos on
 
 ### Milestone
 + <strike>Basic Frontend</strike>
+<img src="./public/images/FrontEndMilestone.png" />
 + Auth using OAuth (Google)
 + Fully working Web app
 + Fully working iOS/iPadOS app

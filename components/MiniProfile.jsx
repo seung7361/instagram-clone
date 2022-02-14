@@ -10,7 +10,7 @@ function MiniProfile() {
 
             <div className="flex-1 mx-4">
                 <h2 className="font-bold`">{session?.user?.name.toLowerCase()}</h2>
-                <h3 className="text-sm text-gray-400">최승빈</h3>
+                <h3 className="text-sm text-gray-400">{session?.user?.name.toLowerCase()}</h3>
             </div>
 
             <button className="text-sm text-blue-400 text-semibold">Sign out</button>
